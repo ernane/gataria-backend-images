@@ -21,3 +21,12 @@ Para rodar os testes
 ```
 npm test
 ```
+
+# Execução local com Docker
+
+```bash
+docker run --name gataria-backend-images \
+-e CATAPI_URL=$CATAPI_URL \
+-p 3020:3020 \
+-d gataria-backend-images:dev
+```
